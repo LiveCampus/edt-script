@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./e2.sh &
+./e1.sh &
 
 pid=$!
 result_cpu=0
