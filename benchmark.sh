@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./e1.sh &
+./e1.sh -u test -p oaiyuzdhgoiuahzdouh &
 
 pid=$!
 result_cpu=0
