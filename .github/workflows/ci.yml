@@ -15,5 +15,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run a one-line script
-        run: ls
+      - name: Benchmark
+        run: strace -o trace -c -Ttt ./e1.sh
