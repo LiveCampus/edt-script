@@ -44,8 +44,8 @@ checkPassword $username $password
 
 hashedPassword=$(openssl passwd -6 -salt $salt $password)
 
-useradd $username
-usermod --password $hashedPassword $username
+sudo useradd $username
+sudo usermod --password $hashedPassword $username
 
 echo "User $username created with success !"
 
