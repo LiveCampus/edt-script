@@ -16,4 +16,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Benchmark
-        run: strace -o trace -c -Ttt ./e1.sh
+        run: strace -o trace -c -Ttt ./e1.sh -u test -p EPjuMVc73saTc2hb7GVdtLHjkYeFr3SB
