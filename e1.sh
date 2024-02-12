@@ -10,7 +10,7 @@ function checkPassword() {
     [[ "$password" == "motdepasse" ]] && { echo "Password must not be \"password\""; exit 1; }
     [[ "$password" =~ ^[0-9]+$ ]] && { echo "Password must not be only digits"; exit 1; }
 
-    grep -q "$password" ./rockyou.txt && { echo "Password has been pawned, please choose another one"; exit 1; }
+    zgrep -q "$password" ./rockyou.txt.gz && { echo "Password has been pawned, please choose another one"; exit 1; }
 }
 
 salt="kRAcrbeu32WwPRtjFhXfq2SBLPJc75mA"
